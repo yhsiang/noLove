@@ -1,10 +1,16 @@
+---
+title: A No-Love HTML5 Page Inspired By Hackerzhou
+date: '2013-06-28'
+description:
+tags: [HTML5, canvas, fun, hackerzhou, projects]
+---
 ### Intro
 
 A HTML5 page using codes to express the author's feelings of not having a boyfriend. The codes appear in a typewritter kindof fashion (with sound). Then a butterfly is drawn on the canvas made of flower pedals. It is quite dreamy. A timer then emerges saying that how many seconds the author's been waiting for true love to show up.
 
 <i class="icon-eye-open"></i> [No-Love Page][0]
 
-[<img src="https://raw.github.com/daisygao/noLove/master/assets/media/nolove-screenshot.png" class="img-polaroid">][0]
+[<img src="{{urls.media}}/nolove-screenshot.png" class="img-polaroid">][0]
 
 ### Markdown Code and Syntax Highlighting
 
@@ -112,7 +118,7 @@ It's mainly completed by the garden.js library which render Pedals for each Bloo
 
 [Butterfly Curve][8]:
 
-<img src="https://raw.github.com/daisygao/noLove/master/assets/media/butterfly.png" class="img-polaroid">
+<img src="{{urls.media}}/butterfly.png" class="img-polaroid">
 
 <code>getButterflyPoint()</code> function is used to retrieve the current position on the curve. The position vector is pushed to bloom array of the Garden object and is rendered by calling <code>garden.render();</code> continuously using <code>setInterval()</code>.
 
@@ -137,10 +143,12 @@ The digits in the timer are loaded by defining a new font using [font-face][9]:
 ### Minify the Scripts
 
 Minifying javascript and CSS before publishing is a good habit, because:
+
 - It will reduce the loading speed of you page.
 - It kindof protects your codes being copied by others.
 
 I use online minifying tools for such tasks:
+
 - [CSS Minifier][11]
 - [JavaScript Minifier][12]
 
@@ -152,7 +160,7 @@ For task management, I use [Wunderlist](https://www.wunderlist.com). The sub-tas
 ### In the End
 I built this [No-Love page][0] to get a basic understanding of HTML5 and I was moved to cry after seeing how beautiful the page turned out to be. Hope you enjoy it as much as I do =)
 
-[0]: http://daisygao.com/nolove "No Love Page"
+[0]: {{urls.based_path}}/nolove "No Love Page"
 [1]: http://daringfireball.net/projects/markdown/ "Markdown Language"
 [2]: http://ruhoh.com/ "Ruhoh Static Blog Generator"
 [3]: https://github.com/isagalaev/highlight.js "Highlight.js Github"
