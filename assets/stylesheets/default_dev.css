@@ -1,17 +1,14 @@
 body {
 	margin: 0;
 	padding: 0;
-	background: #FFFFEE;
-	font-size: 12px;
+	/*background: #FBEFEF;*/
+	background: #f8f8ff;
+	/*background: #FFFFEE;*/
+	/*font-size: 12px;*/
 	overflow: auto;
 }
 
-#mainDiv{
-	width: 100%;
-	height: 100%;
-}
-
-#loveHeart {
+#animation {
 	float: left;
 	width:670px;
 	height:625px;
@@ -25,12 +22,14 @@ body {
 #elapseClock {
 	text-align: right;
 	font-size: 18px;
-	margin-top: 10px;
+	margin-top: 40px;
 	margin-bottom: 10px;
 }
 
 #words {
-	font-family: "sans-serif";
+	font-family: 'Satisfy', cursive;
+	/*font-family: "sans-serif";*/
+	/*font-family: Tangerine; */
 	width: 500px;
 	font-size: 24px;
 	color:#666;
@@ -41,23 +40,28 @@ body {
 }
 
 #elapseClock .digit{
-	font-family: "digit";
+	/*font-family: "digit";*/
+	/*font-family: 'Londrina Shadow', cursive;*/
+	font-family: digit, 'Joti One';
+	/*font-family: 'Joti One', cursive;*/
 	font-size: 36px;
 }
 
-#loveu{
+#hope{
 	padding: 5px;
 	font-size: 22px;
-	margin-top: 80px;
-	margin-right: 120px;
+	margin-top: 100px;
+	margin-right: 130px;
 	text-align: right;
 	display: none;
 }
 
-#loveu .signature{
+#hope .signature{
 	margin-top: 10px;
 	font-size: 20px;
 	font-style: italic;
+	/*color: blue;*/
+	color: #8904B1;
 }
 
 #clickSound{
@@ -67,38 +71,21 @@ body {
 #code {
 	float: left;
 	width: 440px;
-	height: 400px;
-	color: #333;
-	font-family: "Consolas", "Monaco", "Bitstream Vera Sans Mono", "Courier New", "sans-serif";
-	font-size: 12px;
+	height: 645px;
 }
-
-#code .string{
-	color: #2a36ff;
-}
-
-#code .keyword{
-	color: #7f0055;
-	font-weight:bold;
-}
-
-#code .placeholder{
-	margin-left:15px;
-}
-
-#code .space{
-	margin-left:7px;
-}
-
-#code .comments{
-	color: #3f7f5f;
+#code pre code {
+	background: none;
 }
 
 #copyright{
+	clear: both;
 	margin-top: 10px;
 	text-align: center;
 	width:100%;
-	color:#666;
+	color:#333333;
+	font-family: Helvetica;
+	font-size: 14px;
+	line-height: 20px;
 }
 
 #errorMsg{
@@ -112,4 +99,6 @@ body {
 
 #copyright a{
 	color:#666;
+	text-decoration: none;
+
 }

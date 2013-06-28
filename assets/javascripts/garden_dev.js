@@ -143,11 +143,11 @@
 	    Garden.options = {
 	        petalCount: {
 	            min: 8,
-	            max: 15
+	            max: 20
 	        },
 	        petalStretch: {
 	            min: 0.1,
-	            max: 3
+	            max: 5
 	        },
 	        growFactor: {
 	            min: 0.1,
@@ -155,17 +155,17 @@
 	        },
 	        bloomRadius: {
 	            min: 8,
-	            max: 10
+	            max: 12
 	        },
-	        density: 10,
+	        density: 15,
 	        growSpeed: 1000 / 60,
 	        color: {
 				rmin: 128,
-				rmax: 255,
+				rmax: 220,
 				gmin: 0,
 				gmax: 128,
-				bmin: 0,
-				bmax: 128,
+				bmin: 220,
+				bmax: 255,
 	            opacity: 0.1
 	        },
 	        tanAngle: 60

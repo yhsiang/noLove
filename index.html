@@ -1,102 +1,83 @@
-<!DOCTYPE HTML>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-	<title>Our Love Story</title>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<style type="text/css">
-		@font-face {
-			font-family: digit;
-			src: url('digital-7_mono.ttf') format("truetype");
-		}
-	</style>
-	<link href="css/default.css" type="text/css" rel="stylesheet">
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/garden.js"></script>
-    <script type="text/javascript" src="js/functions.js"></script>
-</head>
+<p><link rel="stylesheet" href="http://yandex.st/highlightjs/7.3/styles/idea.min.css">
+<script type="text/javascript" src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Satisfy|Joti+One' rel='stylesheet' type='text/css'>
+<script src='assets/javascripts/jquery-10092eee563dec2dca82b77d2cf5a1ae.js'></script>
+<script src='assets/javascripts/garden-dec39de92840730bfcb31c7101e04f7d.js'></script>
+<script src='assets/javascripts/functions-8f4b1939920b25e15994488e0aba6a56.js'></script>
+<link href=' assets/stylesheets/default-942bc4cc8fb8da53224a3e0aaa55a9eb.css' type='text/css' rel='stylesheet' media='all'>
+<style type="text/css">
+    @font-face {
+        font-family: digit;
+        src: url(assets/media/digital-7-mono.ttf) format(truetype);
+    }
+</style>
+<a href="https://github.com/daisygao/noLove" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+<div id="content">
+    <audio id="sound">
+        <source src="assets/media/type.ogg" type="audio/ogg" />
+        <source src="assets/media/type.mp3" type="audio/mpeg" />
+        Your browser does not support HTML5 audio.
+    </audio>
+    <div id="code"></p>
 
-<body>
-	<div id="mainDiv">
-		<div id="content">
-			<div id="code">
-				<span class="comments">/**</span><br />
-				<span class="space"/><span class="comments">* We are both Fudan SSers and programmers,</span><br />
-				<span class="space"/><span class="comments">* so I write some code to celebrate our 1st anniversary.</span><br />
-				<span class="space"/><span class="comments">*/</span><br />
-				Boy i = <span class="keyword">new</span> Boy(<span class="string">"hackerzhou"</span>);<br />
-				Girl u = <span class="keyword">new</span> Girl(<span class="string">"MaryNee"</span>);<br />
-				<span class="comments">// Nov 2, 2010, I told you I love you. </span><br />
-				i.love(u);<br />
-				<span class="comments">// Luckily, you accepted and became my girlfriend eversince.</span><br />
-				u.accepted();<br />
-				<span class="comments">// Since then, I miss u every day.</span><br />
-				i.miss(u);<br />
-				<span class="comments">// And take care of u and our love.</span><br />
-				i.takeCareOf(u);<br />
-				<span class="comments">// You say that you won't be so easy to marry me.</span><br />
-				<span class="comments">// So I keep waiting and I have confidence that you will.</span><br />
-				<span class="keyword">boolean</span> isHesitate = <span class="keyword">true</span>;<br />
-				<span class="keyword">while</span> (isHesitate) {<br />
-				<span class="placeholder"/>i.waitFor(u);<br />
-				<span class="placeholder"/><span class="comments">// I think it is an important decision</span><br />
-				<span class="placeholder"/><span class="comments">// and you should think it over.</span><br />
-				<span class="placeholder"/>isHesitate = u.thinkOver();<br />
-				}<br />
-				<span class="comments">// After a romantic wedding, we will live happily ever after.</span><br />
-				i.marry(u);<br />
-				i.liveHappilyWith(u);<br />
-			</div>
-			<div id="loveHeart">
-				<canvas id="garden"></canvas>
-				<div id="words">
-					<div id="messages">
-						Minyue, I have fallen in love with you for
-						<div id="elapseClock"></div>
-					</div>
-					<div id="loveu">
-						Love u forever and ever.<br/>
-						<div class="signature">- hackerzhou</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="copyright">
-			Inspired by <a href="http://www.openrise.com/lab/FlowerPower/">FlowerPower</a> project.<br />
-			Copyright © 2011 <a href='http://hackerzhou.me'>hackerzhou.me</a> 2009-2011
-		</div>
-	</div>
-	<script type="text/javascript">
-		var offsetX = $("#loveHeart").width() / 2;
-		var offsetY = $("#loveHeart").height() / 2 - 55;
-		var together = new Date();
-		together.setFullYear(2010, 10, 2);
-		together.setHours(20);
-		together.setMinutes(0);
-		together.setSeconds(0);
-		together.setMilliseconds(0);
-		
-		if (!document.createElement('canvas').getContext) {
-			var msg = document.createElement("div");
-			msg.id = "errorMsg";
-			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
-			document.body.appendChild(msg);
-			$("#code").css("display", "none")
-			$("#copyright").css("position", "absolute");
-			$("#copyright").css("bottom", "10px");
-		    document.execCommand("stop");
-		} else {
-			setTimeout(function () {
-				startHeartAnimation();
-			}, 5000);
+<pre><code>/* I am a girl named Daisy. I don&#39;t have a boyfriend. */
+Girl i = new Girl(&quot;Daisy&quot;);
+Boy u = null;
 
-			timeElapse(together);
-			setInterval(function () {
-				timeElapse(together);
-			}, 500);
+/* These are festivals that matter to college students:
+   Valentine&#39;s Day, Qixi, Singles&#39; Day, Christmas Eve, 
+   New Year&#39;s Eve */
+Festival festivals[] = {...};
 
-			adjustCodePosition();
-			$("#code").typewriter();
-		}
-	</script>
-</body>
-</html>
+/* When I am single... */
+while (u == null) { 
+    // I pretend to ignore these days 
+    for (Festival x : festivals) {
+        i.ignoreFestival(x);
+    }
+    i.watchMovies(); // I watched 400 movies...
+    i.cook();        // I made cupcakes and milk tea... 
+    i.travel();      // I traveled on 3 continents
+    // I push myself to grow during hard days
+    i.grow();   
+    // But I am still waiting for the special one
+    i.wait();       
+    // For I believe some day God will let u show up
+    u = God.assignFor(i);   
+}
+/* If we met and happened to like each other */
+if (u.like(i) &amp;&amp; i.like(u)) {   
+    // We&#39;d watch bad movies together and laugh hard    
+    i.watchMoviesWith(u);
+    // I&#39;d cook your favorites
+    i.cookFor(u);
+    // We&#39;d travel all around the world
+    i.travelWith(u);
+    // We&#39;d grow older and wiser together
+    i.growWith(u);
+    // We&#39;d love spending each festival together ever since
+    for (Festival x : festivals) {
+        i.enjoyFestivalWith(x, u);
+    }
+}
+</code></pre>
+
+<p></div>
+    <div id="animation">
+        <canvas id="garden"></canvas><br>
+        <div id="words">
+            <div id="messages">
+                I have been waiting for you for 
+                <div id="elapseClock"></div>
+            </div>
+            <div id="hope">
+                Looking forward to seeing you.<br/>
+                <div class="signature">- daisygao</div>
+            </div>
+        </div>
+    </div><br>
+</div>
+<div id="copyright">
+    Inspired by <a href="https://github.com/hackerzhou/Love" title="Hackerzhou Love Github project">Hackerzhou Love project</a>.<br />
+    Copyright © 2013 <a href="http://daisygao.com" title="Daisy Gao Homepage">Daisy Gao</a>
+</div></p>
