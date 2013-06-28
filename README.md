@@ -152,7 +152,7 @@ For task management, I use [Wunderlist](https://www.wunderlist.com). The sub-tas
 ### In the End
 I built this [No-Love page][0] to get a basic understanding of HTML5 and I was moved to cry after seeing how beautiful the page turned out to be. Hope you enjoy it as much as I do =)
 
-[0]: {{urls.based_path}}/nolove "No Love Page"
+[0]: http://daisygao.com/nolove "No Love Page"
 [1]: http://daringfireball.net/projects/markdown/ "Markdown Language"
 [2]: http://ruhoh.com/ "Ruhoh Static Blog Generator"
 [3]: https://github.com/isagalaev/highlight.js "Highlight.js Github"
