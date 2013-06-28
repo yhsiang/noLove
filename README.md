@@ -1,16 +1,10 @@
----
-title: A No-Love HTML5 Page Inspired By Hackerzhou
-date: '2013-06-28'
-description:
-tags: [HTML5, canvas, fun, hackerzhou, projects]
----
 ### Intro
 
 A HTML5 page using codes to express the author's feelings of not having a boyfriend. The codes appear in a typewritter kindof fashion (with sound). Then a butterfly is drawn on the canvas made of flower pedals. It is quite dreamy. A timer then emerges saying that how many seconds the author's been waiting for true love to show up.
 
 <i class="icon-eye-open"></i> [No-Love Page][0]
 
-[<img src="{{urls.media}}/nolove-screenshot.png" class="img-polaroid">][0]
+[<img src="https://github.com/daisygao/noLove/blob/master/assets/media/nolove-screenshot.png" class="img-polaroid">][0]
 
 ### Markdown Code and Syntax Highlighting
 
