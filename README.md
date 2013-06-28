@@ -4,7 +4,7 @@ A HTML5 page using codes to express the author's feelings of not having a boyfri
 
 <i class="icon-eye-open"></i> [No-Love Page][0]
 
-[<img src="{{urls.media}}/nolove-screenshot.png" class="img-polaroid">][0]
+[<img src="https://raw.github.com/daisygao/noLove/master/assets/media/nolove-screenshot.png" class="img-polaroid">][0]
 
 ### Markdown Code and Syntax Highlighting
 
@@ -112,7 +112,7 @@ It's mainly completed by the garden.js library which render Pedals for each Bloo
 
 [Butterfly Curve][8]:
 
-<img src="{{urls.media}}/butterfly.png" class="img-polaroid">
+<img src="https://raw.github.com/daisygao/noLove/master/assets/media/butterfly.png" class="img-polaroid">
 
 <code>getButterflyPoint()</code> function is used to retrieve the current position on the curve. The position vector is pushed to bloom array of the Garden object and is rendered by calling <code>garden.render();</code> continuously using <code>setInterval()</code>.
 
