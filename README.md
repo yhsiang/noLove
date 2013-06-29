@@ -1,8 +1,9 @@
 ### Intro
 
-A HTML5 page using codes to express the author's feelings of not having a boyfriend. The codes appear in a typewritter kindof fashion (with sound). Then a butterfly is drawn on the canvas made of flower pedals. It is quite dreamy. A timer then emerges saying that how many seconds the author's been waiting for true love to show up.
+A HTML5 page using codes to express the author's feelings of not having a boyfriend. The codes appear in a typewritter kindof fashion (with sound). Then a butterfly is drawn on the canvas made of flower pedals. It is quite dreamy. A timer then emerges saying that how many seconds the author's been waiting for true love to show up. This work is inspired by [Hackerzhou](https://github.com/hackerzhou)'s [love page](http://hackerzhou.me/love).
 
 <i class="icon-eye-open"></i> [No-Love Page][0]
+<i class="icon-file"></i> [Source Code](https://github.com/daisygao/noLove)
 
 [<img src="https://raw.github.com/daisygao/noLove/master/assets/media/nolove-screenshot.png" class="img-polaroid">][0]
 
@@ -39,7 +40,7 @@ I use a self-called closure <code>loop()</code> function together with <code>set
 
 ### HTML5 Audio
 
-HTML5 has many new elements added such audio, video, article and etc. I use <code>&lt;audio&gt;</code> to store the typing sound:
+HTML5 has many new elements added such as audio, video, article and etc. I use <code>&lt;audio&gt;</code> to store the typing sound:
 	
 	<audio id="sound">
 	    <source src="pathto/type.ogg" type="audio/ogg" />
@@ -47,7 +48,7 @@ HTML5 has many new elements added such audio, video, article and etc. I use <cod
 	    Your browser does not support HTML5 audio.
 	</audio>
 
-Note that some browser only supports .ogg format like safari, so it's better to include audio files of both .mp3 and .ogg formats. More detailed usage can be found [here][4].
+Note that some browser only supports .ogg format like firefox, so it's better to include audio files in both .mp3 and .ogg formats. An online mp3 to ogg converter can be found [here](http://audio.online-convert.com/convert-to-ogg). More detailed usage of HTML5 audio can be found [here][4].
 
 jQuery is then used to extract the audio object and perform methods like <code>play(), pause()</code> or extract attribute such as <code>paused, ended</code>. More properties of audio can be found in [w3schools audio][5].
 
@@ -62,7 +63,7 @@ Note that <code>$("#sound")</code> only retrieves the jQuery object, whose first
 
 ### HTML5 Canvas
 
-Canvas is new element in HTML5 to enable drawing a bitmap-based image. It temporarily only support 2D drawing. All the drawing process is done on some context acquired by calling:
+Canvas is new element in HTML5 to enable drawing a bitmap-based image. It temporarily only supports 2D drawing. All the drawing process is done on some context acquired by calling:
 	
 	gardenCanvas = $("#garden")[0];
 	gardenCanvas.width = $animation.width();
@@ -74,7 +75,7 @@ More details can be found in [w3schools canvas][6] and [wiki canvas][7].
 
 ### Flower Effect
 
-It's mainly completed by the garden.js library which render Pedals for each Bloom in the Garden object. I modify the following parts to change the color, grow speed and radius of the flower bloom:
+It's mainly completed by the garden.js library which renders Pedals for each Bloom in the Garden object. I modify the following parts to change the color, grow speed and radius of the flower bloom:
 	
 	Garden.options = {
         petalCount: {
@@ -114,7 +115,7 @@ It's mainly completed by the garden.js library which render Pedals for each Bloo
 
 <img src="https://raw.github.com/daisygao/noLove/master/assets/media/butterfly.png" class="img-polaroid">
 
-<code>getButterflyPoint()</code> function is used to retrieve the current position on the curve. The position vector is pushed to bloom array of the Garden object and is rendered by calling <code>garden.render();</code> continuously using <code>setInterval()</code>.
+<code>getButterflyPoint()</code> function is used to retrieve the current position on the curve. The position vector is pushed to bloom array of the Garden object and is rendered by calling <code>garden.render()</code> continuously using <code>setInterval()</code>.
 
 ### Cute Fonts
 The digits in the timer are loaded by defining a new font using [font-face][9]:
