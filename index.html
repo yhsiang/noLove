@@ -20,46 +20,45 @@
     </audio>
     <div id="code"></p>
 
-<pre><code>/* I am a girl named Daisy. I don&#39;t have a boyfriend. */
-Girl i = new Girl(&quot;Daisy&quot;);
-Boy u = null;
+<pre><code>#    I am a girl named Daisy. I don&#39;t have a boyfriend.
 
-/* These are festivals that matter to college students:
-   Valentine&#39;s Day, Qixi, Singles&#39; Day, Christmas Eve, 
-   New Year&#39;s Eve */
-Festival festivals[] = {...};
+i = new Girl 'Daisy'
+u = Boy null
 
-/* When I am single... */
-while (u == null) { 
-    // I pretend to ignore these days 
-    for (Festival x : festivals) {
-        i.ignoreFestival(x);
-    }
-    i.watchMovies(); // I watched 400 movies...
-    i.cook();        // I made cupcakes and milk tea... 
-    i.travel();      // I traveled on 3 continents
-    // I push myself to grow during hard days
-    i.grow();   
-    // But I am still waiting for the special one
-    i.wait();       
-    // For I believe some day God will let u show up
-    u = God.assignFor(i);   
-}
-/* If we met and happened to like each other */
-if (u.like(i) &amp;&amp; i.like(u)) {   
-    // We&#39;d watch bad movies together and laugh hard    
-    i.watchMoviesWith(u);
-    // I&#39;d cook your favorites
-    i.cookFor(u);
-    // We&#39;d travel all around the world
-    i.travelWith(u);
-    // We&#39;d grow older and wiser together
-    i.growWith(u);
-    // We&#39;d love spending each festival together ever since
-    for (Festival x : festivals) {
-        i.enjoyFestivalWith(x, u);
-    }
-}
+#   These are festivals that matter to college students:
+#   Valentine&#39;s Day, Qixi, Singles&#39; Day, Christmas Eve, 
+#   New Year&#39;s Eve 
+
+festivals = [ ... ]
+
+# When I am single...
+while u is null 
+    # I pretend to ignore these days 
+    for festival in festivals
+        i.ignore festival
+    i.watchMovies!  # I watched 400 movies...
+    i.cook!             # I made cupcakes and milk tea... 
+    i.travel!           # I traveled on 3 continents
+    # I push myself to grow during hard days
+    i.grow!  
+    # But I am still waiting for the special one
+    i.wait!       
+    # For I believe some day God will let u show up
+    u = God.assignFor i
+
+# If we met and happened to like each other
+if u.like i and i.like u
+    # We&#39;d watch bad movies together and laugh hard 
+    i.watchMoviesWith u
+    # I&#39;d cook your favorites
+    i.cookFor u
+    # We&#39;d travel all around the world
+    i.travelWith u
+    # We&#39;d grow older and wiser together
+    i.growWith u
+    # We&#39;d love spending each festival together ever since
+    for festival in festivals
+        i.enjoyFestivalWith u, festival
 </code></pre>
 
 <p></div>
